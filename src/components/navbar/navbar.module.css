@@ -1,0 +1,61 @@
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+    border-radius: 40% 0 0 40%;
+}
+ul{
+    display: flex;
+    gap: 5%;
+    justify-content: end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav img{
+    text-align: center;
+    width: 19%;
+    margin-left: 3%;
+    margin-top: 1.6%;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+li{
+    list-style: none;
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    color: rgb(172, 245, 255);
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+.portada{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: rgb(29, 29, 29);
+    margin: 0;
+    padding: 0;
+}
