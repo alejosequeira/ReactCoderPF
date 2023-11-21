@@ -22,9 +22,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-{/* 
-      <ItemListContainer greeting={"aaaaaaaaaaaaaa"} />
-      <ItemDetailContainer /> */}
     </>
   )
 }

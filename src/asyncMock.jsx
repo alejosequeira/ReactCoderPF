@@ -91,5 +91,3 @@ export const getProductByCategory = (categoryId) => {
         }, 1000)
     })
 }
-
-// Path: src/components/item/Item.jsx
