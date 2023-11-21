@@ -1,0 +1,134 @@
+
+article {
+    
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid rgb(0, 162, 184);
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #999;
+  }
+  
+  header h2{
+    display: block;
+    align-items: start;
+    text-align: center;
+    font-size: 280%;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-decoration: 3px underline rgb(0, 162, 184);
+    margin-bottom: 0%;
+
+}  
+  picture img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80%;    
+    object-fit: cover;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;       
+  }
+  
+  section {
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  p:last-child {
+    font-style: italic;
+  }
+  
+  footer {
+    margin-top: -25%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap:20px;
+  }
+  .distri_article{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;    
+    background-color: rgb(29, 29, 29);
+    clip-path: polygon(100% 100%, 5% 70%, 0% 0%, 100% 0%, 100% 100%);
+    color: white;
+  }
+  .info_article{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    margin-top:-15%;
+  }
+  .caract_article{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    margin-top: -30%;    
+  }
+    .caract_article h3{
+        font-size: 150%;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2px;
+        color: rgb(0, 162, 184);
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        margin-right: 2%;
+    }
+    footer p{
+        font-size: 300%;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2px;
+        color: white;        
+        padding: 0;
+        font-weight: 900;
+        margin: 0%;
+    }
+    .caract_article li{        
+        list-style: circle;
+        font-size: 120%;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 2px;
+        color: white;       
+        font-weight: 400;
+        margin-top: 3%;        
+        transition: 0.5s;
+    }
+    .caract_article li:hover{
+        color: rgb(0, 162, 184);
+        font-weight: 900;
+        transition: 0.5s;
+        padding: 0;
+    }
+  .img_article{
+    width: 1000px;  
+    margin: 3%;
+    padding: 0;
+    text-align: end;
+    clip-path: polygon(100% 100%, 5% 83%, 0% 0%, 100% 0%, 100% 100%);
+  }
