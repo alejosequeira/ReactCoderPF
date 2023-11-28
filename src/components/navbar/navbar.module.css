@@ -1,4 +1,4 @@
-nav{
+nav {
     width: 100%;
     height: 5vh;
     background-color: rgb(29, 29, 29);
@@ -15,27 +15,32 @@ nav{
     border: 4px solid rgb(0, 162, 184);
     padding: 1.5%;
 }
-nav img{
+
+nav img {
     width: 8%;
     border-radius: 50%;
     border: 2px solid rgb(172, 245, 255);
 }
-.link_img{
+
+.link_img {
     width: 10%;
     text-align: center;
 }
-.link_img img{
+
+.link_img img {
     width: 35%;
 }
-.navBorderColor{
-    border: 3px solid rgba(0, 0, 0, 0);    
+
+.navBorderColor {
+    border: 3px solid rgba(0, 0, 0, 0);
     border-radius: 0;
 }
-.navBorderColor img{
+
+.navBorderColor img {
     display: none;
 }
 
-.currentTitle{
+.currentTitle {
     display: block;
     text-align: center;
     font-size: 150%;
@@ -47,19 +52,21 @@ nav img{
     font-weight: 300;
     width: 40%;
 }
+
 .link_img_current {
     width: 10%;
     text-align: center;
 }
-.link_img_current img{
+
+.link_img_current img {
     width: 50%;
 }
 
-.notCurrentTitle{
+.notCurrentTitle {
     display: none;
 }
 
-ul{
+ul {
     display: flex;
     gap: 5%;
     justify-content: end;
@@ -67,9 +74,10 @@ ul{
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    
+
 }
-.portada{
+
+.portada {
     position: relative;
     width: 100%;
     height: 100%;
@@ -80,47 +88,51 @@ ul{
     text-align: center;
     overflow: hidden;
 }
-.portadaimg{    
+
+.portadaimg {
     width: 100%;
     height: 230px;
     object-fit: cover;
     background-color: rgb(29, 29, 29);
     margin: 0;
-    padding: 0;  
+    padding: 0;
     clip-path: polygon(100% 100%, 5% 70%, 0% 0%, 100% 0%, 100% 100%);
 }
-.logo2{    
+
+.logo2 {
     position: absolute;
     width: 8%;
     border-radius: 50%;
     border: 2px solid rgb(172, 245, 255);
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    
-  top: 50%;
-  left: 7%; 
-  transform: translate(-50%, -50%); 
-}
-.portadatitle{
-    position: absolute;
-  top: 35%; 
-  left: 35%; 
-  transform: translate(-50%, -50%);
-  
-    padding: 5px;    
-    font-size: 300%;
-    color: #000;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0); 
-    
+
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%);
 }
 
-li{
+.portadatitle {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    padding: 5px;
+    font-size: 300%;
+    color: #000;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+
+}
+
+li {
     list-style: none;
     margin: 0 1rem;
     color: white;
     font-size: 125%;
     font-weight: 500;
-    cursor: pointer;    
+    cursor: pointer;
 }
+
 li:hover {
     color: rgb(0, 162, 184);
     border-radius: 30%;
@@ -131,11 +143,12 @@ li:hover {
     padding: 0 1%;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-.title{
+
+.title {
     color: rgba(172, 245, 255, 0.205);
     font-size: 2rem;
     margin: 0;
@@ -146,22 +159,25 @@ a{
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 3px;
 }
-.products{
-    list-style: none;
-    padding: 0;
-    margin: 0;    
-}
-.products_list {        
-    width: 15%;
-    display: none;
-    position: absolute;
-    border: none;    
+
+.products {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-top: 1%;    
 }
-.products_list li{       
+
+.products_list {
+    width: 15%;
+    display: none;
+    position: absolute;
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 1%;
+}
+
+.products_list li {
     text-align: center;
     border-radius: 30%;
     width: 100%;
@@ -173,36 +189,41 @@ a{
     background-color: rgb(29, 29, 29);
     font-family: monospace;
 }
+
 .products:hover .products_list {
-    display: block;        
-    }
-.products_list li:hover{
+    display: block;
+}
+
+.products_list li:hover {
     background-color: rgb(0, 162, 184);
     border: 2px solid rgb(29, 29, 29);
 }
-.products_list li:hover a{
-    color: rgb(29, 29, 29);    
+
+.products_list li:hover a {
+    color: rgb(29, 29, 29);
 }
-.agri_drone{
-    list-style: none;
-    padding: 0;
-    margin: 0;  
-}
-.drone_list{
-    width: 100%;
-    display: none;
-    position: absolute;
-    border: none;    
+
+.agri_drone {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-top: 10%;       
-    margin-left: 90%;    
+}
+
+.drone_list {
+    width: 100%;
+    display: none;
+    position: absolute;
+    border: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10%;
+    margin-left: 90%;
     margin-top: -20%;
     padding-left: 10%;
 }
 
-.drone_list li{       
+.drone_list li {
     text-align: center;
     border-radius: 30%;
     width: 100%;
@@ -214,22 +235,24 @@ a{
     background-color: rgb(29, 29, 29);
     font-family: monospace;
 }
-.agri_drone:hover .drone_list {
-    display: block;   
-    }
 
-.agri_drone:hover .drone_list li a{        
+.agri_drone:hover .drone_list {
+    display: block;
+}
+
+.agri_drone:hover .drone_list li a {
     color: white;
     text-decoration: none;
-    font-size: 80%;   
- }
-
- .agri_drone .drone_list li:hover{
-    background-color: rgb(0, 162, 184);
-    border: 2px solid rgb(29, 29, 29);   
-    
+    font-size: 80%;
 }
-.agri_drone .drone_list li:hover a{
+
+.agri_drone .drone_list li:hover {
+    background-color: rgb(0, 162, 184);
+    border: 2px solid rgb(29, 29, 29);
+
+}
+
+.agri_drone .drone_list li:hover a {
     color: black;
     text-decoration: none;
     font-size: 100%;

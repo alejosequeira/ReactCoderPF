@@ -1,83 +1,84 @@
 .cardItem {
-    
-    width: 500px;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    max-width: 300px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .cardItem header {
-    margin-bottom: 10px;
-  }
-  
-  .cardItem h2.item_header {
-    font-size: 20px;
-    color: #333;
-  }
-  .cardItem__img{
-    width: 50%;
-    height: 50%;
-  }
-   .itemImg {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    object-fit: cover;
-    border: 1px solid black;
-  }
-  
-  .cardItem section {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .cardItem p.info {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  .cardItem button.itemButton {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #3498db;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cardItem button.itemButton:hover {
-    background-color: #2980b9;
-  }
-  
-  .cardItem footer {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .cardItem footer a.itemOption {
-    text-decoration: none;
-  }
-  
-  .cardItem footer a.itemOption button.ItemButton {
-    padding: 8px 16px;
-    border: 1px solid #3498db;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #3498db;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .cardItem footer a.itemOption button.ItemButton:hover {
-    background-color: #3498db;
-    color: white;
-  }
-  
+
+  width: 500px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cardItem header {
+  margin-bottom: 10px;
+}
+
+.cardItem h2.item_header {
+  font-size: 20px;
+  color: #333;
+}
+
+.cardItem__img {
+  width: 50%;
+  height: 50%;
+}
+
+.itemImg {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.cardItem section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardItem p.info {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.cardItem button.itemButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardItem button.itemButton:hover {
+  background-color: #2980b9;
+}
+
+.cardItem footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cardItem footer a.itemOption {
+  text-decoration: none;
+}
+
+.cardItem footer a.itemOption button.ItemButton {
+  padding: 8px 16px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #3498db;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cardItem footer a.itemOption button.ItemButton:hover {
+  background-color: #3498db;
+  color: white;
+}
