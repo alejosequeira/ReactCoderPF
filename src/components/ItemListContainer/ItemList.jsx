@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './aitemlist.module.css'
-import ThisItem from '../Item/ThisItem';
+import ThisItem from './ThisItem'
 
 
 const ItemList = ({ products }) => {

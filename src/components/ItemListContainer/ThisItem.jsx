@@ -4,6 +4,7 @@ import style from './item.module.css'
 import { CartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 
+
 const ThisItem = ({ id, title, pictureUrl, price, stock }) => {
     const [quantityAdd, setQuantityAdd] = useState(0)
 
