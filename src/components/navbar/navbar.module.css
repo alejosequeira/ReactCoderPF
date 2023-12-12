@@ -36,7 +36,7 @@ nav img {
     border-radius: 0;
 }
 
-.navBorderColor img {
+.navBorderColor .imagen_logo {
     display: none;
 }
 
@@ -131,6 +131,7 @@ li {
     font-size: 125%;
     font-weight: 500;
     cursor: pointer;
+   
 }
 
 li:hover {
@@ -146,6 +147,7 @@ li:hover {
 a {
     text-decoration: none;
     color: white;
+    
 }
 
 .title {
@@ -158,6 +160,7 @@ a {
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 3px;
+    
 }
 
 .products {
@@ -257,4 +260,6 @@ a {
     text-decoration: none;
     font-size: 100%;
     width: 100%;
+}
+.cart_widget{
 }

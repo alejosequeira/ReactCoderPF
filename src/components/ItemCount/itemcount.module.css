@@ -1,0 +1,52 @@
+.counter_wrapper{
+    text-align: center;
+}
+.counter_button {
+    padding: 2px 6px;
+    font-size: 16px;
+    border: 2px solid rgb(0, 162, 184);
+    background-color: rgb(29, 29, 29);
+    cursor: pointer;
+    margin: 0;
+  color: white;
+  font-weight: bold;
+
+  }
+  
+  /* Estilos para el span que muestra el valor del contador */
+  .counter_value {
+    font-size: 20px;
+    margin: 0 20px;
+  }
+  
+  /* Estilos para el botón 'Add Shopping Cart' habilitado */
+  .add_button {
+    color: white;
+  text-align: center;
+    border-radius: 30%;
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 3% 10%;
+    margin: 1% 0;
+    border: 2px solid rgb(0, 162, 184);
+    background-color: rgb(29, 29, 29);
+    font-family: monospace;
+    cursor: pointer;
+  }
+  .add_button:hover{
+    background-color: rgb(0, 162, 184);
+    color: black;    
+    border: 2px solid rgb(29, 29, 29);
+  }
+  
+  .add_button_disabled {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ccc;
+    color: #666;
+    border: none;
+    cursor: not-allowed;
+    margin-top: 10px;
+  }
+  
