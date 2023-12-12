@@ -4,7 +4,7 @@ import style from './item.module.css'
 import { CartContext } from '../../context/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 
-const Item = ({ id, title, pictureUrl, price, stock }) => {
+const ThisItem = ({ id, title, pictureUrl, price, stock }) => {
     const [quantityAdd, setQuantityAdd] = useState(0)
 
     const { addItem } = useContext(CartContext)
@@ -53,4 +53,4 @@ const Item = ({ id, title, pictureUrl, price, stock }) => {
         </>
     )
 }
-export default Item;
+export default ThisItem;

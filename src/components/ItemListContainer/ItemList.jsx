@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './aitemlist.module.css'
-import Item from '../Item/ItemItem';
+import ThisItem from '../Item/ThisItem';
 
 
 const ItemList = ({ products }) => {
@@ -9,7 +9,7 @@ const ItemList = ({ products }) => {
       <div className={styles.ListGroup}>
         {products && products.map(product => {
           return (
-            <Item key={product.id} {...product} />
+            <ThisItem key={product.id} {...product} />
           )
         })}
       </div>
