@@ -4,7 +4,7 @@ import ItemList from './ItemList'
 import { useParams } from 'react-router-dom'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../firebase/client'
-
+import { getProductByCategory, getProductById, getProducts } from '../../asyncMock'
 
 const ItemListContainer = () => {
 

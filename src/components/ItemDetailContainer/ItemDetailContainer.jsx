@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../firebase/client'
+import { getProductById } from '../../asyncMock'
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
