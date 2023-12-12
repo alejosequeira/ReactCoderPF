@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { getProductById } from '../../asyncMock'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 import { doc, getDoc } from 'firebase/firestore'
