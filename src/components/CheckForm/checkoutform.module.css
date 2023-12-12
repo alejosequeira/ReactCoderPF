@@ -23,18 +23,17 @@
     background-color: #f9f9f9;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 0.5rem 0.25rem rgb(0, 162, 184);
-    margin-bottom: 250px;
+    margin-bottom: 10%;
   }
   
   .formu h2 {
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   
   .formu label {
     display: block;
-    margin-bottom: 10px;
   }
   
   .formu input[type="text"],
@@ -66,5 +65,8 @@
   
   .formu button[type="submit"]:hover {
     background-color: #0056b3; /* Change to a darker shade for hover effect */
+  }
+  .formu div{
+    text-align: center;
   }
   

@@ -14,12 +14,12 @@ const CheckOut = () => {
   const { cart, total, clearCart } = useContext(CartContext)
   
 
-  const createOrder = async ({ nombre, telefono, correo }) => {
+  const createOrder = async ({ nombre, apellido, telefono, correo }) => {
 
     setLoading(true)
     try {
       const objOrder = {
-        buyer: { nombre, telefono, correo },
+        buyer: { nombre, apellido, telefono, correo },
         items: cart,
         total: total,
         date: Timestamp.fromDate(new Date())
@@ -88,9 +88,9 @@ const CheckOut = () => {
   };
   if (orderId) {
     return (
-      <div>
-        <h1>Order Created Successfully. Your Order Number is {orderId}</h1>
-        <button onClick={handleConfirmation}>Confirm Order</button>
+      <div className={style.formulario}>
+        <h1 >Order Created Successfully.</h1>
+        <button onClick={handleConfirmation}>VIEW ORDER</button>
 
       </div>
     )
@@ -100,57 +100,12 @@ const CheckOut = () => {
 
 
   return (
+    <>
     <div className={style.formulario}>
-      <h1>CheckOut</h1>
+      <h1>CHECKOUT</h1>
       <CheckForm onConfirm={createOrder} />
-
     </div>
+    </>
   )
 }
 export default CheckOut;
-
-
-
-
-
-
-
-
-
-// const orders = collection(db, 'orders')
-// await addDoc(orders, objOrder).then((docRef)=> {
-//   setOrderId(docRef.id)
-// }
-// )
-// const batch = writeBatch(db)
-// const items = collection(db, 'items')
-// cart.forEach((item)=> {
-//   batch.update(items, item.id, {stock: item.stock - item.quantity})
-// })
-// await batch.commit()
-// const q = query(collection(db, 'items'), where(documentId(), 'in', cart.map((item)=> item.id)))
-// const querySnapshot = await getDocs(q)
-// const itemsToUpdate = querySnapshot.docs.map((doc)=> doc.data())
-// console.log(itemsToUpdate)
-// itemsToUpdate.forEach((item)=> {
-//   batch.update(items, item.id, {stock: item.stock - item.quantity})
-// })
-// await batch.commit()
-// clearCart()
-// }
-// catch (error) {
-// console.log(error)
-// }
-// finally {
-// setLoading(false)
-// }
-// }
-// if (loading) {
-// return <h1>Loading...</h1>
-// }
-// if (orderId) {
-// return <h1>Orden creada con exito. Su numero de orden es {orderId}</h1>
-// }
-// else{
-// return <CheckOutForm onConfirm={createOrder}/>
-// }
