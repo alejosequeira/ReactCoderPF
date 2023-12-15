@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-import CheckForm from '../checkForm/CheckForm'
+import CheckForm from '../CheckForm/CheckForm'
 import { useState } from 'react'
 import { collection, addDoc, Timestamp, writeBatch, query, where, getDocs, documentId } from 'firebase/firestore'
 import { db } from '../../firebase/client'
 import Swal from 'sweetalert2'
 import style from './checkout.module.css'
-import NavBar from '../navbar/NavBar'
+
 
 
 const CheckOut = () => {
