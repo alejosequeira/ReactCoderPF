@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from "./navbar.module.css"
 import portada from "../../image/headerdrone3.jpg"
 import logo2 from "../../image/droneicon.jpg"
-import CartWidget from '../Cartwidget/CartWidget'
+import CartWidget from '../cartwidget/CartWidget'
 import { Link } from 'react-router-dom';
 
 
