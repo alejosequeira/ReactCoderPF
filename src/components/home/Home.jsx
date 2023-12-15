@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './home.module.css'
 import droneV from '../../image/index-video.mp4'
-import ItemListContainer from '../itemListContainer/ItemListContainer'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
 
 const Home = () => {
   return (
