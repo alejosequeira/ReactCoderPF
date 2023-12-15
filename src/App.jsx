@@ -1,6 +1,6 @@
 
 import styles from './App.module.css'
-import NavBar from './components/NavBar/NavBar'
+import NavBar from './components/navbar/NavBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/Home/Home'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
