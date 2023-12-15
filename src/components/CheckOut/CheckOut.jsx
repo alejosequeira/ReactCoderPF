@@ -1,18 +1,19 @@
-import React, { useContext} from 'react'
+import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-import CheckForm from '../CheckForm/CheckForm'
+import CheckForm from '../checkForm/CheckForm'
 import { useState } from 'react'
 import { collection, addDoc, Timestamp, writeBatch, query, where, getDocs, documentId } from 'firebase/firestore'
 import { db } from '../../firebase/client'
 import Swal from 'sweetalert2'
 import style from './checkout.module.css'
+import NavBar from '../navbar/NavBar'
 
 
 const CheckOut = () => {
   const [loading, setLoading] = useState(false)
   const [orderId, setOrderId] = useState('')
   const { cart, total, clearCart } = useContext(CartContext)
-  
+
 
   const createOrder = async ({ nombre, apellido, telefono, correo }) => {
 
@@ -54,7 +55,7 @@ const CheckOut = () => {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'Algunos productos se quedaron sin stock!',
+          text: 'Out Of Stock!',
         })
 
       }
@@ -63,7 +64,7 @@ const CheckOut = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Algo salio mal!',      
+        text: 'Something its wrong!',
       })
     }
     finally {
@@ -89,22 +90,22 @@ const CheckOut = () => {
   if (orderId) {
     return (
       <div className={style.formulario}>
-        <h1 >Order Created Successfully.</h1>
+        <h1>Your Order has been placed successfully.</h1>
         <button onClick={handleConfirmation}>VIEW ORDER</button>
 
       </div>
     )
   }
-    
+
 
 
 
   return (
     <>
-    <div className={style.formulario}>
-      <h1>CHECKOUT</h1>
-      <CheckForm onConfirm={createOrder} />
-    </div>
+      <div className={style.formulario}>
+        <h1>CHECKOUT</h1>
+        <CheckForm onConfirm={createOrder} />
+      </div>
     </>
   )
 }

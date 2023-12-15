@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
-import CartItem from '../CartItem/CartItem'
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import CartItem from '../cartItem/CartItem'
+import ItemListContainer from '../itemListContainer/ItemListContainer'
 import style from './cart.module.css'
 
 
@@ -19,7 +19,6 @@ const Cart = () => {
     }
     return (
         <div>
-
             <h1 className={style.title}>My Cart</h1>
             <h2 className={style.summary}>Cantidad de productos: {totalQuantity}</h2>
             <h2 className={style.summary}>Total: ${total}</h2>

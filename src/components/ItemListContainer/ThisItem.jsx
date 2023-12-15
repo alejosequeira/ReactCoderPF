@@ -9,6 +9,7 @@ const ThisItem = ({ id, title, pictureUrl, price, stock }) => {
     const [quantityAdd, setQuantityAdd] = useState(0)
 
     const { addItem } = useContext(CartContext)
+    
     const handleOnAdd = (quantity) => {
         setQuantityAdd(quantity)
         const item = {

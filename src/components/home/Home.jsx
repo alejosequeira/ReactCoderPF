@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from './home.module.css'
-import ItemCount from '../ItemCount/ItemCount'
 import droneV from '../../image/index-video.mp4'
-import { useParams } from 'react-router-dom'
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
+import ItemListContainer from '../itemListContainer/ItemListContainer'
 
 const Home = () => {
   return (
