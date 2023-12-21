@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import ItemDetail from './ItemDetail'
-import { useParams } from 'react-router-dom'
-import { doc, getDoc } from 'firebase/firestore'
-import { db } from '../../firebase/client'
-import Swal from 'sweetalert2'
 
+
+import React, { useEffect, useState, useContext } from 'react';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../firebase/client';
+import Swal from 'sweetalert2';
+import { CartContext } from '../../context/CartContext';
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null)
-    const [loading, setLoading] = useState(true)
+    const [product, setProduct] = useState(null);
+    const [quantityAdd, setQuantityAdd] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const { addItem } = useContext(CartContext);
 
-    const { itemId } = useParams()
+    const { itemId } = useParams();
 
     useEffect(() => {
         setLoading(true);
@@ -45,11 +49,34 @@ const ItemDetailContainer = () => {
                 setLoading(false);
             });
     }, [itemId]);
+
+    const handleOnAddToCart = (quantity) => {
+        const { id, title, price, pictureUrl, stock } = product;
+        const item = {
+            id,
+            title,
+            price,
+            pictureUrl,
+            quantity,
+            stock,
+        };
+        addItem(item, quantity);
+    };
+
     return (
         <div>
-
-            <ItemDetail {...product} />
+            {loading ? (
+                <p>Loading...</p>
+            ) : (
+                <ItemDetail
+                product={product}
+                onAddToCart={handleOnAddToCart}
+                quantityAdd={quantityAdd}
+                setQuantityAdd={setQuantityAdd}
+            />
+            )}
         </div>
-    )
-}
+    );
+};
+
 export default ItemDetailContainer;

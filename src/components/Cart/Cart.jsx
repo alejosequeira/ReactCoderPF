@@ -8,6 +8,10 @@ import style from './cart.module.css'
 
 const Cart = () => {
     const { cart, clearCart, totalQuantity, total } = useContext(CartContext)
+    const handleOnAddToCart = (item, quantity) => {
+        addItemToCart(item, quantity);
+      };
+
     if (totalQuantity === 0) {
         return (
             <div>
@@ -22,16 +26,19 @@ const Cart = () => {
             <h1 className={style.title}>My Cart</h1>
             <h2 className={style.summary}>Cantidad de productos: {totalQuantity}</h2>
             <h2 className={style.summary}>Total: ${total}</h2>
-            {cart.map(p => <CartItem key={p.id}{...p} />)}
+            {cart.map(p => <CartItem key={p.id} {...p} onAddToCart={handleOnAddToCart} />)}
 
             <div className={style.module}>
                 <button className={style.empty_cart} onClick={() => clearCart()}>Empty Cart</button>
                 <Link className={style.ver_detalle} to={`/products`}>More Products</Link>
                 <Link className={style.ver_detalle} to='/checkout'>Finish Buying</Link>
-            </div>
+            </div> 
 
             <ItemListContainer />
-        </div>
+        </div> 
     )
 }
 export default Cart
+
+
+
