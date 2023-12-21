@@ -70,7 +70,7 @@ export default function NavBar() {
         <h1 className={styles.currentTitle}>{currentTitle}</h1>
 
         <ul>
-          <li><i className="fa fa-home"></i><Link to='/' > HOME</Link></li>
+          <li><i className="fa fa-home"></i><Link to='/home' > HOME</Link></li>
           <li className={styles.products}>
             <i className="fa fa-fighter-jet	"></i>
             <Link to={`/products`}> PRODUCTS</Link>
