@@ -13,7 +13,7 @@ const ThisItem = ({ id, title, pictureUrl, price, stock, onAddToCart }) => {
             quantity,
             stock,
         };
-        onAddToCart(item, quantity); // Llama a la función onAddToCart del componente padre
+        onAddToCart(item, quantity); 
     };
 
     return (

@@ -1,60 +1,3 @@
-// import React, { useState } from 'react'
-// import style from './checkoutform.module.css'
-
-// const CheckForm = ({ onConfirm }) => {
-//     const [nombre, setNombre] = useState('')
-//     const [apellido, setApellido] = useState('')
-//     const [telefono, setTelefono] = useState('')
-
-//     const [correo, setCorreo] = useState('')
-//     const [confirmCorreo, setConfirmCorreo] = useState('');
-//     const [emailMatch, setEmailMatch] = useState(true);
-//     // Funcion para validar el email y mostrar un mensaje de error si no es valido
-//     const handleCorreoChange = (event) => {
-//         const { value } = event.target;
-//         setCorreo(value);
-
-//         // Check if both emails match when the user types in the confirm email input
-//         setEmailMatch(value === confirmCorreo);
-//     };
-
-//     const handleConfirmCorreoChange = (event) => {
-//         const { value } = event.target;
-//         setConfirmCorreo(value);
-
-//         // Check if both emails match when the user types in the confirm email input
-//         setEmailMatch(value === correo);
-//     };
-    
-//     const handleConfirm = (event) => {
-//         event.preventDefault()
-//         const userData = {
-//             nombre,
-//             apellido,
-//             telefono,
-//             correo
-//         }
-//         onConfirm(userData)
-//     }
-//     return (
-//         <div>
-//             <form className={style.formu} onSubmit={handleConfirm}>
-//                 <h2>Complete the form to confirm your purchase</h2>
-
-//                 <div >
-//                     {emailMatch ? ( 
-//                         <button type="submit">Confirm Purchase</button>
-//                     ) : (
-//                         <p style={{ color: 'red' }}>¡ Emails do not match !</p>
-//                     )}
-//                 </div>
-//             </form>
-//         </div>
-//     )
-// }
-// export default CheckForm
-
-
 import React, { useState } from 'react';
 import style from './checkoutform.module.css';
 
@@ -100,7 +43,7 @@ const CheckForm = ({ onConfirm }) => {
         <div>
             <form className={style.formu} onSubmit={handleConfirm}>
                 <h2>Complete the form to confirm your purchase</h2>
-                
+
                 <label htmlFor="">
                     Name:
                     <input

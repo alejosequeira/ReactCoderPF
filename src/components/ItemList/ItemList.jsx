@@ -17,7 +17,7 @@ const ItemList = ({ products }) => {
           <ThisItem
             key={product.id}
             {...product}
-            onAddToCart={handleAddToCart} // Pasar la función de manejo de carrito como prop a ThisItem
+            onAddToCart={handleAddToCart} 
           />
         );
       })}
